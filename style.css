@@ -1,10 +1,17 @@
 /*------NavigationBar---*/
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 body{
     /*color: #40514E;*/
     margin: 0 !important;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
    /* font-size: 120%; 100% = 16px = 1em % */
 }
 h1{
@@ -62,12 +69,10 @@ a{
     text-align : left;
     
 }
-/* #navbar 
+#navbar 
 {
-    margin: 0;
-    padding-top: 0px;
-    background-color: rgb(2, 2, 41);
-}*/
+    /* position: fixed; */
+}
 .navbar-toggler
 {
     border : none !important;
@@ -86,6 +91,26 @@ a{
 .nav-item a:hover{
     color: rgb(73, 221, 247) !important;
 }
+.pccoe-img,.acmw-img{
+    height: 100%;
+    width: 100%;
+}
+@media(max-width:1028px){
+.acmw-logo{
+    position: relative;
+    right: 85px;
+}
+.navbar-brand img 
+{
+    height : 60px;
+    width: 60px;
+    border-radius: 30%;
+    padding-left: 10px;
+    padding-top: 0px;
+
+}
+}
+
 /*-------------First Section----------*/
 .colored-section
 {
@@ -111,8 +136,24 @@ a{
     font-family: 'Comfortaa';
     
 }
-
-
+@media(max-width:1028px){
+    #caption{
+        text-align: center;
+        padding-top: 60px;
+        color : white;
+        font-size: 40px;
+        font-family: 'Comfortaa';
+    }
+    
+}
+.keynote{
+font-size: 3rem;
+}
+@media(max-width:1028px){
+.keynote{
+    font-size: 2rem;
+}
+}
 /* .layer
 {
     height: 700px;
@@ -216,22 +257,30 @@ text-align: justify;
 {
     background-color: blue !important;
 }
+
 #competition-img{
     height: 350px;
     width: 450px;
-border-radius: 10%;
-margin-top: 50px;
-margin-bottom: 10%;
-
-
-}
-#competition-img
-{
+    border-radius: 10%;
+    margin-top: 50px;
+    margin-bottom: 10%;
     box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
     cursor:pointer;
     transition:0.5s;
 }
-
+@media (max-width:1028px)
+{
+#competition-img{
+    height: 250px;
+    width: 250px;
+    border-radius: 10%;
+    margin-top: 50px;
+    margin-bottom: 10%;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    cursor:pointer;
+    transition:0.5s;
+}
+}
 /* Footer Section*/
 
 .social-icon {
@@ -263,5 +312,6 @@ margin-bottom: 10%;
     .img-section{
         height: 372px;
         width: 100%;
+        background-position: center;
     }
 }
